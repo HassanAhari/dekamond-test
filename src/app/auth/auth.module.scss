@@ -1,0 +1,33 @@
+@import 'variables';
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $background-color;
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: $shadow;
+    width: 100%;
+    max-width: 400px;
+
+    h1 {
+      text-align: center;
+      color: $text-color;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .form {
+      margin: 1rem;
+      padding: 1.5rem;
+    }
+  }
+}
